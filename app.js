@@ -25,8 +25,8 @@ const users = ['freecodecamp', 'gumdropstsm', 'bregvids', 'studenalbatroz', 'war
       const template = `
       <li class="list-item">
         <img class="stream-logo" src="${streamData.logo}" alt="streamer-logo">
-        <a class="stream-name" href="${streamData.link}">${streamData.name}</a>
-        <p class="stream-title">${streamData.name}</p>
+        <a class="stream-name" href="${streamData.link}"><h2 class="streamer-name">${streamData.name}</h2></a>
+        <p class="stream-title">${streamData.status}</p>
       </li>
       `;
       const list = document.getElementById('streamer-list');
@@ -38,12 +38,10 @@ const users = ['freecodecamp', 'gumdropstsm', 'bregvids', 'studenalbatroz', 'war
     promise.then((data) => {
       streamData.name = data.display_name;
       streamData.logo = data.logo;
-      //console.log(streamData.name);
       return get(`https://wind-bow.glitch.me/twitch-api/channels/${name}`);
     }).then((data) => {
       streamData.status = data.status;
       streamData.link = data.url;
-      //console.log(data);
       return get(`https://wind-bow.glitch.me/twitch-api/streams/${name}`);
     }).then((data) => {
       //console.log(data);

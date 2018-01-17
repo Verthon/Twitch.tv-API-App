@@ -1,22 +1,48 @@
 body{
     margin: 0;
-    height: 100vh;
     display: flex;
     flex-basis: 100vw;
     font-family: 'Ubuntu';
     justify-content: center;
     align-items: center;
+    font-size: 10px;
+}
+a{
+    text-decoration: none;
+    color: #ddd;
 }
 .app-container{
     display: flex;
     flex-direction: column;
     background-color: #2b2727;
-    flex-basis: 50vw;
-    min-height: 50vh;
+    flex-basis: 80vw;
     align-items: center;
     color: #ccc;
+    margin-top: 2rem;
+}
+.header{
+    font-size: 2.5rem;
+}
+.list{
+    width: 100vh;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.list li{
+    display:flex;
+    padding: 0.5rem;
+    align-items: center;
+}
+.streamer-name{
+    font-size: 1.3rem;
+    justify-self: flex-end;
+}
+.list li p{
+    font-size: 1.4rem;
+    align-self: flex-end;
 }
 .stream-logo{
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 5rem;
+    max-height: 5rem;
 }
