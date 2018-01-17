@@ -1,6 +1,7 @@
 # Twitch.tv-API-App
-- messed up with branches
-- https://stackoverflow.com/questions/47822319/accessing-to-any-element-of-array-return-undefined-jquery
-- https://stackoverflow.com/questions/14220321/how-do-i-return-the-response-from-an-asynchronous-call
-- using Twitch API
-- suppose to use jQuery(work in progress);
+- working example with usage of promise,
+- functions now are fat arrow functions,
+- still need to work with online/offline versions,
+- add css,
+- link to working example of both versions (vanilla js - master),
+- and to jquery version(jquery branch),
